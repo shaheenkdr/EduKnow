@@ -1,0 +1,66 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="270dp"
+    card_view:cardUseCompatPadding="false"
+
+    android:id="@+id/cvsx">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Title_Text_Wrap"
+            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#F9F9F9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="17sp"
+                    android:id="@+id/stream_title"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:layout_toEndOf="@+id/school_logo_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/stream_poster"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/Title_Text_Wrap"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="0dp" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/stream_play_dummy"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/stream_content"
+            android:layout_below="@+id/stream_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
